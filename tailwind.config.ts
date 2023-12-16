@@ -6,7 +6,19 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}"
   ],
   theme: {
-    extend: {}
+    extend: {
+      backgroundColor: {
+        primary: "#121212",
+        secondary: "#1E1E1E"
+      },
+      textColor: {
+        primary: "#EAEAEA",
+        secondary: "#B0B0B0"
+      },
+      colors: {
+        accent: "#FF6B6B"
+      }
+    }
   },
   plugins: []
 };

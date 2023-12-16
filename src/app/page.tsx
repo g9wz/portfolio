@@ -1,9 +1,20 @@
-import { metadata } from "./layout";
-
 export default function Home() {
+  // copilot generated this 👍🏻
+  const idk = [
+    "Hey, I'm Khalil!",
+    "I'm Khalil, one more time!",
+    "Yup, still Khalil. You know the drill",
+    "Still here. Still Khalil.."
+  ];
   return (
-    <div>
-      <h1 className="p-6 text-3xl font-bold">{metadata.title as string}</h1>
-    </div>
+    <>
+      {idk.map((text, index) => {
+        return (
+          <section key={index}>
+            <h1>{text} 👋🏻</h1>
+          </section>
+        );
+      })}
+    </>
   );
 }

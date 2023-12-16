@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply bg-primary text-primary;
+}
+
+section {
+  @apply flex h-screen items-center justify-center;
+}
+
+h1 {
+  @apply rounded-full bg-black/50 p-7 text-center text-3xl;
+}
+
+section:nth-child(even) {
+  @apply bg-secondary;
+}
