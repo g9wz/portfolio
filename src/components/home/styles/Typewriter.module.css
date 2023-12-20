@@ -1,0 +1,10 @@
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.typewriterCursor {
+  @apply text-accent;
+  animation: blink 1s infinite;
+}
