@@ -1,10 +1,10 @@
 import Header from "@components/header";
 import Home from "@components/home";
+import About from "@components/about";
 
 export default function Main() {
   // copilot generated this 👍🏻
   const idk = [
-    { id: "about", text: "I'm Khalil, one more time!" },
     { id: "work", text: "Yup, still Khalil. You know the drill" },
     { id: "contact", text: "Still here. Still Khalil.." }
   ];
@@ -13,6 +13,7 @@ export default function Main() {
     <>
       <Header />
       <Home />
+      <About />
       {idk.map(({ id, text }) => {
         return (
           <section id={id} key={id}>

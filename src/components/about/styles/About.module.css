@@ -1,0 +1,13 @@
+@keyframes blink {
+  from {
+    @apply text-primary;
+  }
+  to {
+    @apply text-accent;
+  }
+}
+
+.blink {
+  @apply font-medium;
+  animation: blink 0.5s steps(2, jump-none) infinite;
+}

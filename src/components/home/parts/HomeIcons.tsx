@@ -1,7 +1,7 @@
-import styles from "../styles/HomeIcon.module.css";
-
 import Résumé from "~icons/line-md/text-box";
 import Email from "~icons/line-md/email";
+
+import styles from "../styles/HomeIcon.module.css";
 
 const HomeIcons = () => {
   return (
