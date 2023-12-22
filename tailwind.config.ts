@@ -17,6 +17,10 @@ const config: Config = {
       },
       colors: {
         accent: "#FF6B6B"
+      },
+      borderColor: {
+        primary: "#313131",
+        secondary: "#1E1E1E"
       }
     }
   },
