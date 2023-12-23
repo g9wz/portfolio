@@ -4,9 +4,9 @@ import { useRef } from "react";
 
 import Image from "next/image";
 
-import Floating from "./stack/Floating";
+import Anywhere from "./parts/Anywhere";
 
-import styles from "./styles/About.module.css";
+import Floating from "./stack/Floating";
 
 const About = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -21,16 +21,16 @@ const About = () => {
           About <span className="text-accent">Me</span>.
         </h1>
         <p className="text-secondary">
-          A Software Engineering student <br className="md:hidden" /> and the
-          Google DSC lead at YU.
+          Software engineering and Google DSC
+          <br className="md:hidden" /> lead at Al Yamamah University.
           <br />
           <br />
-          Exploring Game Development, <br className="md:hidden" /> Flutter, and
-          Fuchsia OS :)
+          Exploring Game Development,
+          <br className="md:hidden" /> Flutter, and Fuchsia OS :)
           <br />
           <br />
-          Curious about my tech stack? <br className="md:hidden" /> Click{" "}
-          <strong className={styles.blink}>anywhere</strong> to find out!
+          Curious about my tech stack?
+          <br className="md:hidden" /> Click <Anywhere /> to find out!
         </p>
       </div>
       <Image

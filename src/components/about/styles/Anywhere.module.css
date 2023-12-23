@@ -1,4 +1,4 @@
-@keyframes blink {
+@keyframes anywhere {
   from {
     @apply text-primary;
   }
@@ -7,7 +7,7 @@
   }
 }
 
-.blink {
+.anywhere {
   @apply font-medium;
-  animation: blink 0.5s steps(2, jump-none) infinite;
+  animation: anywhere 0.5s steps(2, jump-none) infinite;
 }
