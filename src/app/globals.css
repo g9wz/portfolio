@@ -11,5 +11,5 @@ body {
 }
 
 section {
-  @apply mx-auto flex h-screen w-[90vw] items-center justify-center;
+  @apply mx-auto flex min-h-screen w-[90vw] items-center justify-center;
 }

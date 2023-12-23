@@ -10,7 +10,6 @@ export default function Main() {
       <Home />
       <About />
       <Work />
-
       <section id="contact">
         <h1 className="rounded-full bg-black/50 p-7 text-center text-3xl">
           Still here. Still Khalil.. 👋🏻
