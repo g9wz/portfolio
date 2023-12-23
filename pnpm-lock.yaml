@@ -16,6 +16,9 @@ dependencies:
     version: 18.2.0(react@18.2.0)
 
 devDependencies:
+  '@formcarry/react':
+    specifier: ^1.0.4
+    version: 1.0.4(react-dom@18.2.0)(react@18.2.0)
   '@iconify/json':
     specifier: ^2.2.160
     version: 2.2.160
@@ -273,6 +276,16 @@ packages:
       tslib: 2.6.2
     dev: true
     optional: true
+
+  /@formcarry/react@1.0.4(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-PmjlanTkrDlkbSphngy35z2bxB7AdKDKf7nLhgZ7HRM5cpz389A/nfQGmMblLiMV6X5g/6SdS0NRkQomAKUCsw==}
+    peerDependencies:
+      react: '>= 16.8.0'
+      react-dom: '>= 16.8.0'
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: true
 
   /@iconify/json@2.2.160:
     resolution: {integrity: sha512-mjVikrD2ohux47NDrG22qzVBIf0BGS3W4HUZO3d+dnk7Sk3AYrmWVsGiMW6aoSGrBMIKAXpkLqCqgu57eu1oIw==}

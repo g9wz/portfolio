@@ -1,0 +1,36 @@
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+
+.button {
+  @apply mx-auto flex w-fit items-center overflow-hidden rounded-2xl bg-secondary p-4 px-8 outline-none active:scale-95;
+}
+
+.button:hover .wrapper,
+.button:focus .wrapper {
+  animation: fly-1 0.5s ease-in-out infinite alternate;
+}
+
+.icon {
+  @apply block h-6 w-6 origin-center text-accent transition-transform duration-300 ease-in-out;
+}
+
+.button:hover .icon,
+.button:focus .icon {
+  transform: translateX(2em) scale(1.25);
+}
+
+.text {
+  @apply ml-2 block text-xl font-medium transition-transform duration-300 ease-in-out;
+}
+
+.button:hover .text,
+.button:focus .text {
+  transform: translateX(4.75em);
+}

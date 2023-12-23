@@ -1,0 +1,27 @@
+.div {
+  @apply flex items-center border-b-[3px] border-secondary py-3 transition-colors duration-300 ease-linear;
+}
+
+.div:focus-within {
+  @apply border-accent;
+}
+
+.input,
+.textarea {
+  @apply w-full bg-transparent px-1 text-lg leading-relaxed tracking-wide placeholder:text-primary focus:outline-none;
+}
+
+.textarea {
+  @apply h-24;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.input:focus::placeholder,
+.textarea:focus::placeholder {
+  opacity: 0;
+}
