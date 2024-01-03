@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 html {
+  @apply scrollbar-track-transparent scrollbar-thin scrollbar-thumb-accent;
   scroll-behavior: smooth;
 }
 
