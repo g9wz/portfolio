@@ -5,24 +5,25 @@ import ErbutLogo from "./parts/ErbutLogo";
 const Text = () => {
   return (
     <>
-      <h2 className="text-3xl font-medium md:text-[3.625rem] xl:text-[4.75rem]">
-        Who? 🤔
-      </h2>
+      <h2 className="text-4xl font-medium leading-none">Who? 🤔</h2>
 
-      <p className="text-pretty !leading-10 md:text-2xl">
+      <p className="text-pretty text-[1.4rem] leading-10">
         I’m Khalil — a software engineer with diverse{" "}
-        <br className="max-sm:hidden" /> experience in responsive web
+        <br className="max-[527px]:hidden" /> experience in responsive web
         development.
         <br /> <br />
-        Currently in Riyadh, Saudi Arabia, juggling <br /> finishing my major
-        while co-building
+        Currently in Riyadh, Saudi Arabia, juggling{" "}
+        <br className="max-[527px]:hidden" /> finishing my major while
+        co-building
         <Link href="https://erbut.me/" target="_blank">
-          <ErbutLogo className="mx-1 inline-flex size-9 rotate-[10deg] rounded-lg bg-white transition-transform hover:scale-110 md:ml-2" />
+          <ErbutLogo className="mb-1 ml-1 mr-[1.5px] inline-block size-8 rounded-xl bg-white text-black transition-transform hover:scale-110" />
         </Link>
         .
         <br /> <br />
-        I've been actively building my skills through <br /> freelance work and
-        I'm seeking roles that <br /> allow for continuous professional growth.
+        I've been actively building my skills through{" "}
+        <br className="max-[527px]:hidden" /> freelance work and I'm seeking
+        roles that <br className="max-[527px]:hidden" /> allow for continuous
+        professional growth.
       </p>
     </>
   );
