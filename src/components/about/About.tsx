@@ -18,7 +18,7 @@ const About = () => {
             src="/me.png"
             alt="My Memoji"
             width={420}
-            height={420}
+            height={355}
             quality={100}
           />
         </div>
