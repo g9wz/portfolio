@@ -13,7 +13,7 @@ const Work = () => {
   return (
     <section
       id="work"
-      className="relative z-10 -mx-5 mt-10 bg-white px-5 pb-10 lg:mt-24 lg:rounded-b-8xl lg:pb-36 xl:-mx-10 xl:px-10"
+      className="padding-b-gone relative z-10 mt-10 bg-white pb-10 lg:mt-24 lg:rounded-b-8xl lg:pb-36"
     >
       <div className="mb-10 flex items-center justify-between border-t-4 border-black p-5 leading-none lg:mx-[8%] lg:mb-20 lg:px-10 lg:pt-10">
         <h2 className="text-2xl font-medium lg:text-3xl">Work</h2>

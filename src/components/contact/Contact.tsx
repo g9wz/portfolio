@@ -1,17 +1,25 @@
 import { Form } from "./parts";
 
+import { Button } from "@/components/global";
+
 const Contact = () => {
   return (
     <section
       id="contact"
-      className="z-0 -mx-5 -mt-20 min-h-screen bg-black px-5 py-44 text-white lg:py-64 xl:-mx-10 xl:px-10"
+      className="padding-b-gone -mt-20 bg-black pb-16 pt-36 text-white lg:pb-32 lg:pt-48"
     >
-      <h2 className="text-center text-4xl font-medium lg:text-[4.75rem] [&>span]:opacity-50">
-        Let<span>’</span>s Have a Chat<span>.</span>
-      </h2>
+      <div className="flex flex-col items-center justify-center gap-y-10 lg:gap-y-28">
+        <h2 className="text-center text-4xl font-medium lg:text-[4.75rem] [&>span]:opacity-50">
+          Let<span>’</span>s Have a Chat<span>.</span>
+        </h2>
 
-      <div className="relative mx-auto mt-10 h-[25rem] w-full max-w-[45rem] lg:mt-28 lg:h-[40rem]">
-        <Form />
+        <div className="relative h-[25rem] w-full max-w-[45rem] lg:h-[40rem]">
+          <Form />
+        </div>
+
+        <Button href="mailto:me@khalil.im" variant="light">
+          me@khalil.im
+        </Button>
       </div>
     </section>
   );

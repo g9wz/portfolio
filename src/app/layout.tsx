@@ -9,6 +9,8 @@ export const metadata: Metadata = {
   description: "",
 };
 
+import { Header, Footer } from "@/components/global";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -16,7 +18,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={epilogue.className}>{children}</body>
+      <body className={epilogue.className}>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
