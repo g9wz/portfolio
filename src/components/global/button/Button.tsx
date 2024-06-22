@@ -12,7 +12,7 @@ interface ButtonProps
   variant: "light" | "dark";
 }
 
-const Button = ({ children, variant, ...props }: ButtonProps) => {
+const Button = ({ children, variant, className, ...props }: ButtonProps) => {
   const buttonVariant =
     variant === "light"
       ? "border-white hover:bg-white hover:text-black"
@@ -20,7 +20,7 @@ const Button = ({ children, variant, ...props }: ButtonProps) => {
   return (
     <Link
       {...props}
-      className={`${buttonVariant} group inline-flex items-center rounded-2xl border-2 px-9 py-4 font-semibold leading-4 transition-colors duration-300 ease-in-out`}
+      className={`${buttonVariant} group inline-flex items-center rounded-2xl border-2 px-9 py-4 font-semibold leading-4 transition-colors duration-300 ease-in-out ${className}`}
     >
       {children}
       <ArrowUpRight className="ml-1 font-bold transition-transform duration-300 ease-in-out group-hover:rotate-45" />

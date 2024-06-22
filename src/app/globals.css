@@ -10,3 +10,9 @@
     @apply px-5 xl:px-10;
   }
 }
+
+@layer utilities {
+  .padding-b-gone {
+    @apply -mx-5 px-5 xl:-mx-10 xl:px-10;
+  }
+}
