@@ -1,0 +1,16 @@
+/* container */
+.formContainer :global(.conversational-form) {
+  @apply rounded-4xl;
+}
+
+/* inner form */
+.formContainer :global(.conversational-form .conversational-form-inner) {
+  @apply pb-2;
+}
+
+/* input and button styling */
+.formContainer :global(.conversational-form .inputWrapper input),
+.formContainer :global(.conversational-form .inputWrapper textarea),
+.formContainer :global(.conversational-form cf-input-button.cf-input-button) {
+  @apply rounded-4xl;
+}

@@ -8,6 +8,12 @@ importers:
 
   .:
     dependencies:
+      conversational-form:
+        specifier: ^1.0.2
+        version: 1.0.2
+      libphonenumber-js:
+        specifier: ^1.11.4
+        version: 1.11.4
       next:
         specifier: 14.2.4
         version: 14.2.4(@babel/core@7.24.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -591,6 +597,9 @@ packages:
   confbox@0.1.7:
     resolution: {integrity: sha512-uJcB/FKZtBMCJpK8MQji6bJHgu1tixKPxRLeGkNzBoOZzpnZUJm0jm2/sBDWcuBx1dYgxV4JU+g5hmNxCyAmdA==}
 
+  conversational-form@1.0.2:
+    resolution: {integrity: sha512-sm1BspLtyNlJzGFVMAeOhphzvaGnWNEzoTUmtkmSp10Ehb+Ns+1+w1XFC+tBtkqmXIOGndDCwdsDxVN/bRjEqA==}
+
   convert-source-map@2.0.0:
     resolution: {integrity: sha512-Kvp459HrV2FEJ1CAsi1Ku+MY3kasH19TFykTz2xWmMeq6bk2NU3XXvfJ+Q61m0xktWwt+1HSYf3JZsTms3aRJg==}
 
@@ -805,6 +814,9 @@ packages:
 
   kolorist@1.8.0:
     resolution: {integrity: sha512-Y+60/zizpJ3HRH8DCss+q95yr6145JXZo46OTpFvDZWLfRCE4qChOyk1b26nMaNpfHHgxagk9dXT5OP0Tfe+dQ==}
+
+  libphonenumber-js@1.11.4:
+    resolution: {integrity: sha512-F/R50HQuWWYcmU/esP5jrH5LiWYaN7DpN0a/99U8+mnGGtnx8kmRE+649dQh3v+CowXXZc8vpkf5AmYkO0AQ7Q==}
 
   lilconfig@2.1.0:
     resolution: {integrity: sha512-utWOt/GHzuUxnLKxB6dk81RoOeoNeHgbrXiuGk4yyF5qlRz+iIVWu56E2fqGHFrXz0QNUhLB/8nKqvRH66JKGQ==}
@@ -1843,6 +1855,8 @@ snapshots:
 
   confbox@0.1.7: {}
 
+  conversational-form@1.0.2: {}
+
   convert-source-map@2.0.0: {}
 
   cosmiconfig@8.3.6(typescript@5.4.5):
@@ -2024,6 +2038,8 @@ snapshots:
   json5@2.2.3: {}
 
   kolorist@1.8.0: {}
+
+  libphonenumber-js@1.11.4: {}
 
   lilconfig@2.1.0: {}
 
