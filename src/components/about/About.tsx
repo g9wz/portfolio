@@ -53,8 +53,8 @@ const Text = () => {
         </Link>
         .
         <br /> <br />
-        I've been actively building my skills through{" "}
-        <br className="max-[527px]:hidden" /> freelance work and I'm seeking
+        I’ve been actively building my skills through{" "}
+        <br className="max-[527px]:hidden" /> freelance work and I’m seeking
         roles that <br className="max-[527px]:hidden" /> allow for continuous
         professional growth.
       </p>

@@ -6,7 +6,12 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      borderRadius: {
+        "4xl": "32px",
+        "8xl": "64px",
+      },
+    },
   },
   plugins: [],
 };
