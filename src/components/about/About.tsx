@@ -15,12 +15,13 @@ const About = () => {
       className="padding-b-gone my-10 bg-foreground py-10 text-background lg:mx-auto lg:my-24 lg:rounded-8xl lg:px-14 lg:py-24 xl:px-[8%]"
     >
       <div className="flex flex-col items-center justify-between gap-y-20 xl:flex-row-reverse">
-        <div className="flex max-w-[97.5%] items-center justify-center rounded-8xl bg-background max-xl:mx-auto xl:ml-auto xl:h-[555px]">
+        <div className="relative h-[350px] w-full max-w-[97.5%] rounded-8xl bg-background max-xl:mx-auto sm:w-[450px] xl:h-[450px]">
           <Image
-            src="/me.png"
-            alt="My Memoji"
-            width={420}
-            height={355}
+            src="/me.jpg"
+            alt="Image of me shot from the back at a sports competition"
+            className="rounded-8xl object-cover"
+            sizes="(max-width: 640px) 97.5vw, 450px"
+            fill={true}
             quality={100}
           />
         </div>
