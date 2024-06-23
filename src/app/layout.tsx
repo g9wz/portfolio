@@ -21,12 +21,7 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning lang="en">
       <body className={epilogue.className}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
+        <ThemeProvider attribute="class" defaultTheme="light">
           <Header />
           {children}
           <Footer />
