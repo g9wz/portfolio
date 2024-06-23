@@ -13,9 +13,9 @@ const Work = () => {
   return (
     <section
       id="work"
-      className="padding-b-gone relative z-10 mt-10 bg-white pb-10 lg:mt-24 lg:rounded-b-8xl lg:pb-36"
+      className="padding-b-gone relative z-10 mt-10 bg-background pb-10 lg:mt-24 lg:rounded-b-8xl lg:pb-36"
     >
-      <div className="mb-10 flex items-center justify-between border-t-4 border-black p-5 leading-none lg:mx-[8%] lg:mb-20 lg:px-10 lg:pt-10">
+      <div className="mb-10 flex items-center justify-between border-t-4 border-foreground p-5 leading-none lg:mx-[8%] lg:mb-20 lg:px-10 lg:pt-10">
         <h2 className="text-2xl font-medium lg:text-3xl">Work</h2>
         <span className="flex items-center gap-x-1 tracking-wider lg:text-lg">
           Latest projects <ArrowDown />
@@ -47,11 +47,16 @@ const Work = () => {
           </div>
         ))}
         <Button
-          href="https://github.com/g9wz/portfolio"
-          target="_blank"
           variant="dark"
+          size="lg"
+          className="group"
+          withIcon={
+            <ArrowUpRight className="transition-transform duration-300 ease-in-out group-hover:rotate-45" />
+          }
         >
-          Check more on GitHub
+          <Link href="https://github.com/g9wz/portfolio" target="_blank">
+            Check more on GitHub
+          </Link>
         </Button>
       </div>
     </section>

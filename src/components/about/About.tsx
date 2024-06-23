@@ -6,14 +6,16 @@ import { Button } from "@/components/global";
 
 import ErbutLogo from "@/assets/icons/ErbutLogo";
 
+import ArrowUpRight from "~icons/ph/arrow-up-right-bold";
+
 const About = () => {
   return (
     <section
       id="about"
-      className="padding-b-gone my-10 bg-black py-10 text-white lg:mx-auto lg:my-24 lg:rounded-[64px] lg:px-14 lg:py-24 xl:px-[8%]"
+      className="padding-b-gone my-10 bg-foreground py-10 text-background lg:mx-auto lg:my-24 lg:rounded-8xl lg:px-14 lg:py-24 xl:px-[8%]"
     >
       <div className="flex flex-col items-center justify-between gap-y-20 xl:flex-row-reverse">
-        <div className="flex max-w-[97.5%] items-center justify-center rounded-[64px] bg-white max-xl:mx-auto xl:ml-auto xl:h-[555px]">
+        <div className="flex max-w-[97.5%] items-center justify-center rounded-8xl bg-background max-xl:mx-auto xl:ml-auto xl:h-[555px]">
           <Image
             src="/me.png"
             alt="My Memoji"
@@ -24,8 +26,17 @@ const About = () => {
         </div>
         <div className="w-full space-y-10 text-center xl:w-[55%] xl:text-left">
           <Text />
-          <Button href="#" variant="light">
-            See my Resumé
+          <Button
+            variant="light"
+            size="lg"
+            className="group"
+            withIcon={
+              <ArrowUpRight className="transition-transform duration-300 ease-in-out group-hover:rotate-45" />
+            }
+          >
+            <Link href="#" target="_blank">
+              See my Resumé
+            </Link>
           </Button>
         </div>
       </div>
@@ -48,8 +59,12 @@ const Text = () => {
         Currently in Riyadh, Saudi Arabia, juggling{" "}
         <br className="max-[527px]:hidden" /> finishing my major while
         co-building
-        <Link href="https://erbut.me/" target="_blank">
-          <ErbutLogo className="mb-1 ml-1 mr-[1.5px] inline-block size-8 rounded-xl bg-white text-black transition-transform hover:scale-110" />
+        <Link
+          href="https://erbut.me/"
+          target="_blank"
+          className="ml-1 mr-[1.5px] inline-flex size-8 items-center justify-center rounded-xl bg-background align-middle transition-transform hover:scale-110"
+        >
+          <ErbutLogo className="size-7 text-foreground" />
         </Link>
         .
         <br /> <br />
