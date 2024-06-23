@@ -49,9 +49,9 @@ export default About;
 const Text = () => {
   return (
     <>
-      <h2 className="text-4xl font-medium leading-none">Who? 🤔</h2>
+      <h2 className="text-4xl font-medium leading-none">About</h2>
 
-      <p className="text-balance text-[1.4rem] leading-10">
+      <p className="text-balance text-[1.4rem] leading-10 max-sm:-mx-1">
         I’m Khalil — a software engineer with diverse{" "}
         <br className="max-[527px]:hidden" /> experience in responsive web
         development.
