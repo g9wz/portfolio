@@ -3,7 +3,7 @@ export const projects = [
     url: "https://erbut.me/",
     image: "/projects/erbut.gif",
     alt: "Animated GIF of the whole website, showcasing the landing page, a features bento grid, and testimonials.",
-    title: "Erbut 🔗",
+    title: "Erbut",
     description:
       "A link-in-bio tool co-founded by me and a friend. It has a scalable, maintainable architecture using microservices, Docker containers, and Envoy for service proxying. The backend is written in Go, with React and Tailwind CSS on the frontend.",
   },
@@ -25,7 +25,7 @@ export const projects = [
   },
   {
     url: "https://gamecamp-gdscyu.netlify.app/",
-    title: "Game Camp 👾",
+    title: "Game Camp",
     image: "/projects/game-camp.gif",
     alt: "Animated GIF of the website landing page, showcasing one of the pixel art-styled backgrounds, a brief event description, and a register button.",
     description:

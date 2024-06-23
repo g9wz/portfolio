@@ -4,7 +4,7 @@ import Link from "next/link";
 
 import { Button } from "@/components/global";
 
-import ErbutLogo from "@/assets/icons/ErbutLogo";
+import { ErbutLogo } from "@/assets/icons";
 
 import ArrowUpRight from "~icons/ph/arrow-up-right-bold";
 
@@ -61,7 +61,7 @@ const Text = () => {
         <Link
           href="https://erbut.me/"
           target="_blank"
-          className="mx-1.5 mb-1 inline-flex h-8 w-8 items-center justify-center rounded-xl bg-background align-middle transition-transform hover:scale-110"
+          className="mx-1.5 -mt-1 inline-flex h-8 w-8 items-center justify-center rounded-xl bg-background align-middle transition-transform hover:scale-110"
         >
           <ErbutLogo className="size-7 py-[1px] text-foreground" />
         </Link>
