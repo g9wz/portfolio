@@ -19,10 +19,11 @@ const About = () => {
           <Image
             src="/me.jpg"
             alt="Image of me shot from the back at a sports competition"
-            className="object-cover"
-            sizes="(max-width: 640px) 97.5vw, 450px"
-            fill={true}
             quality={100}
+            width={1500}
+            height={1333}
+            className="h-full w-full object-cover"
+            sizes="(max-width: 640px) 97.5vw, 450px"
           />
         </div>
         <div className="w-full space-y-10 text-center xl:w-[55%] xl:text-left">
