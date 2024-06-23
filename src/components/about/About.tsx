@@ -51,22 +51,21 @@ const Text = () => {
     <>
       <h2 className="text-4xl font-medium leading-none">Who? 🤔</h2>
 
-      <p className="text-pretty text-[1.4rem] leading-10">
+      <p className="text-balance text-[1.4rem] leading-10">
         I’m Khalil — a software engineer with diverse{" "}
         <br className="max-[527px]:hidden" /> experience in responsive web
         development.
         <br /> <br />
-        Currently in Riyadh, Saudi Arabia, juggling{" "}
-        <br className="max-[527px]:hidden" /> finishing my major while
-        co-building
+        Currently juggling the final year of my major{" "}
+        <br className="max-[527px]:hidden" /> while co-founding Erbut
         <Link
           href="https://erbut.me/"
           target="_blank"
-          className="ml-1 mr-[1.5px] inline-flex size-8 items-center justify-center rounded-xl bg-background align-middle transition-transform hover:scale-110"
+          className="mx-1.5 mb-1 inline-flex h-8 w-8 items-center justify-center rounded-xl bg-background align-middle transition-transform hover:scale-110"
         >
-          <ErbutLogo className="size-7 text-foreground" />
+          <ErbutLogo className="size-7 py-[1px] text-foreground" />
         </Link>
-        .
+        with my friend :&#41;
         <br /> <br />
         I’ve been actively building my skills through{" "}
         <br className="max-[527px]:hidden" /> freelance work and I’m seeking
