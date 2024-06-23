@@ -63,17 +63,15 @@ const Header = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.2 }}
-              className="absolute right-0 top-full mt-3 w-full space-y-2 rounded-2xl border-2 border-foreground bg-background p-2"
+              className="absolute right-0 top-full mt-3 w-full space-y-2 rounded-2xl border-2 border-foreground bg-background p-4"
             >
               {navItems.map((item) => (
                 <motion.div key={item.name}>
-                  <Link
-                    href={item.href}
-                    className="block rounded-2xl px-4 py-2 text-center hover:bg-foreground hover:text-background"
-                    onClick={toggleMenu}
-                  >
-                    {item.name}
-                  </Link>
+                  <Button asChild className="w-full">
+                    <Link href={item.href} onClick={toggleMenu}>
+                      {item.name}
+                    </Link>
+                  </Button>
                 </motion.div>
               ))}
             </motion.div>
