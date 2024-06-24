@@ -31,11 +31,9 @@ const Header = () => {
 
   return (
     <header className="mt-12 flex items-center justify-between lg:px-[2%] xl:px-[4%]">
-      <span className="font-semibold max-md:text-xl md:text-2xl">
-        Khalil Melhem.
-      </span>
+      <span className="text-xl font-semibold md:text-2xl">Khalil Melhem.</span>
 
-      <nav className="relative flex items-center gap-x-4">
+      <nav className="relative flex items-center gap-x-2 max-md:-mr-2 max-md:scale-90 md:gap-x-4">
         <Button
           variant="dark"
           withIcon={
