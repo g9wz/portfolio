@@ -14,7 +14,7 @@
 
 @layer base {
   html {
-    @apply scroll-smooth;
+    @apply scroll-smooth antialiased;
   }
   body {
     @apply bg-background px-5 text-foreground xl:px-10;

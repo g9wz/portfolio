@@ -1,3 +1,5 @@
+import "./styles/Form.css";
+
 export { default as Form } from "./Form";
 
 export const formFields = [
@@ -51,24 +53,25 @@ export const formFields = [
   {
     tag: "input",
     type: "email",
-    "cf-questions": "Awesome!&&What’s your email address?",
     "cf-conditional-contact-method": "email",
+    "cf-questions": "Awesome!&&What’s your email address?",
+    "cf-error": "Hmm, that doesn’t look like a valid email address.",
     required: true,
   },
   {
     tag: "input",
     type: "tel",
-    "cf-error": "Hmm, that doesn’t look like a valid phone number.",
-    "cf-questions": "Great!&&What’s your mobile number?",
     "cf-conditional-contact-method": "mobile",
+    "cf-questions": "Great!&&What’s your mobile number?",
     "cf-validation": "validatePhoneNumber",
+    "cf-error": "Hmm, that doesn’t look like a valid phone number.",
     required: true,
   },
   {
     tag: "input",
     type: "text",
-    "cf-questions": "Sure!&&How would you like me to get back to you?",
     "cf-conditional-contact-method": "other",
+    "cf-questions": "Sure!&&How would you like me to get back to you?",
     required: true,
   },
 ];
