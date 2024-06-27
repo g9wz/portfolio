@@ -16,7 +16,7 @@ const Contact = () => {
         </h2>
 
         <div
-          className="relative h-[25rem] w-full max-w-[45rem] lg:h-[40rem]"
+          className="relative h-[30rem] w-full max-w-[45rem] lg:h-[35rem]"
           data-aos="fade-up"
           data-aos-delay="500"
         >
