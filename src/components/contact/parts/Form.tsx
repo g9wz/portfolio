@@ -14,18 +14,46 @@ const Form = () => {
   const elemRef = useRef<HTMLDivElement | null>(null);
   const cfRef = useRef<any>(null);
 
-  const handleSubmit = useCallback(() => {
-    if (cfRef.current) {
-      const formData = cfRef.current.getFormData(true);
-      console.log("Form Data:", formData);
-      cfRef.current.addRobotChatResponse(
-        "Thanks for sharing!&&I’ll get back to you as soon as I can.",
+  const handleSubmit = useCallback(async () => {
+    if (!cfRef.current) return;
+
+    try {
+      const formDataObject = cfRef.current.getFormData(true);
+      const formData = new FormData();
+
+      Object.entries(formDataObject).forEach(([key, value]) => {
+        formData.append(key, value as string);
+      });
+
+      formData.append(
+        "access_key",
+        process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY as string,
       );
 
-      const cfInputElement = cfRef.current.el.querySelector("cf-input");
-      if (cfInputElement) {
-        cfInputElement.remove();
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+
+      if (!response.ok) throw new Error("Network response was not ok");
+
+      const result = await response.json();
+      if (result.success) {
+        cfRef.current.addRobotChatResponse(
+          "Thanks for sharing!&&I’ll get back to you as soon as I can.",
+        );
+
+        const cfInputElement = cfRef.current.el.querySelector("cf-input");
+        if (cfInputElement) {
+          cfInputElement.remove();
+        }
+      } else {
+        throw new Error("Form submission was not successful");
       }
+    } catch (error) {
+      cfRef.current.addRobotChatResponse(
+        "Sorry, there was an error submitting the form!&&Please try again later.",
+      );
     }
   }, []);
 
