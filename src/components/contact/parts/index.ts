@@ -6,12 +6,14 @@ export const formFields = [
   {
     tag: "input",
     type: "text",
+    name: "name",
     "cf-questions": "Hey there! What’s your name?",
     required: true,
   },
   {
     tag: "input",
     type: "text",
+    name: "company",
     "cf-questions":
       "Nice to meet you, {previous-answer}!&&Who are you representing today?",
     required: true,
@@ -19,6 +21,7 @@ export const formFields = [
   {
     tag: "input",
     type: "text",
+    name: "purpose",
     "cf-questions": "Cool!&&What do you have on your mind?",
     required: true,
   },
@@ -53,6 +56,7 @@ export const formFields = [
   {
     tag: "input",
     type: "email",
+    name: "email",
     "cf-conditional-contact-method": "email",
     "cf-questions": "Awesome!&&What’s your email address?",
     "cf-error": "Hmm, that doesn’t look like a valid email address.",
@@ -61,6 +65,7 @@ export const formFields = [
   {
     tag: "input",
     type: "tel",
+    name: "mobile",
     "cf-conditional-contact-method": "mobile",
     "cf-questions": "Great!&&What’s your mobile number?",
     "cf-validation": "validatePhoneNumber",
@@ -70,6 +75,7 @@ export const formFields = [
   {
     tag: "input",
     type: "text",
+    name: "method",
     "cf-conditional-contact-method": "other",
     "cf-questions": "Sure!&&How would you like me to get back to you?",
     required: true,
