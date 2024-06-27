@@ -15,7 +15,10 @@ const Work = () => {
       id="work"
       className="padding-b-gone relative z-10 mt-10 bg-background pb-10 lg:mt-24 lg:rounded-b-8xl lg:pb-36"
     >
-      <div className="mb-10 flex items-center justify-between border-t-4 border-foreground p-5 leading-none lg:mx-[8%] lg:mb-20 lg:px-10 lg:pt-10">
+      <div
+        className="mb-10 flex items-center justify-between border-t-4 border-foreground p-5 leading-none lg:mx-[8%] lg:mb-20 lg:px-10 lg:pt-10"
+        data-aos="fade-up"
+      >
         <h2 className="text-2xl font-medium lg:text-3xl">Work</h2>
         <span className="flex items-center gap-x-1 tracking-wider lg:text-lg">
           Latest projects <ArrowDown />
@@ -35,15 +38,21 @@ const Work = () => {
                 width={800}
                 height={437}
                 unoptimized
-                className="rounded-3xl"
+                className="rounded-xl lg:rounded-2xl"
+                data-aos="fade-up"
               />
-              <h3 className="text-4xl font-medium leading-none">
+              <h3
+                className="text-4xl font-medium leading-none"
+                data-aos="fade-up"
+              >
                 {title}
                 <ArrowUpRight className="mb-2 ml-3 inline-block size-9 opacity-0 transition-opacity duration-300 group-hover:opacity-100 max-md:hidden" />
               </h3>
             </Link>
 
-            <p className="mt-4 text-justify text-lg md:mt-8">{description}</p>
+            <p className="mt-4 text-justify text-lg md:mt-8" data-aos="fade-up">
+              {description}
+            </p>
           </div>
         ))}
         <Button
@@ -53,6 +62,7 @@ const Work = () => {
           withIcon={
             <ArrowUpRight className="transition-transform duration-300 ease-in-out group-hover:rotate-45" />
           }
+          data-aos="fade-up"
         >
           <Link href="https://github.com/g9wz/portfolio" target="_blank">
             Check more on GitHub
