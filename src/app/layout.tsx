@@ -5,8 +5,19 @@ import "./globals.css";
 const epilogue = Epilogue({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "",
-  description: "",
+  title: "Khalil Melhem | Portfolio",
+  description:
+    "Personal portfolio of Khalil Melhem — Software Engineer with diverse experience in responsive web development, Co-Founder of Erbut, and Google DSC Lead at Yu.",
+  applicationName: "My Portfolio",
+  keywords: [
+    "khalil melhem",
+    "software engineer",
+    "portfolio",
+    "web developer",
+    "erbut",
+    "gdsc yu",
+    "al yamamah university",
+  ],
 };
 
 import { Header, Footer } from "@/components/global";
