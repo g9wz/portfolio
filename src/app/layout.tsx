@@ -7,7 +7,7 @@ const epilogue = Epilogue({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Khalil Melhem | Portfolio",
   description:
-    "Personal portfolio of Khalil Melhem — Software Engineer with diverse experience in responsive web development, Co-Founder of Erbut, and Google DSC Lead at Yu.",
+    "Software Engineer with diverse experience in responsive web development, Co-Founder of Erbut, and Google DSC Lead at Yu.",
   applicationName: "My Portfolio",
   keywords: [
     "khalil melhem",
