@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.0",
+    "aos": "^2.3.4",
     "conversational-form": "^1.0.2",
     "framer-motion": "^11.2.11",
     "libphonenumber-js": "^1.11.4",
@@ -22,6 +23,7 @@
     "@iconify/json": "^2.2.220",
     "@svgr/core": "^8.1.0",
     "@svgr/plugin-jsx": "^8.1.0",
+    "@types/aos": "^3.0.7",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

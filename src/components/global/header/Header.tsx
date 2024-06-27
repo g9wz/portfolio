@@ -1,13 +1,9 @@
 "use client";
 
 import { useState } from "react";
-
 import Link from "next/link";
-
 import { motion, AnimatePresence } from "framer-motion";
-
 import Button from "@/components/global/button/Button";
-
 import InitialMenuIcon from "~icons/line-md/menu";
 import MenuIcon from "~icons/line-md/close-to-menu-transition";
 import CloseIcon from "~icons/line-md/menu-to-close-transition";
@@ -30,10 +26,12 @@ const Header = () => {
   };
 
   return (
-    <header className="mt-12 flex items-center justify-between lg:px-[2%] xl:px-[4%]">
-      <span className="text-xl font-semibold md:text-2xl">Khalil Melhem.</span>
+    <header className="relative z-50 mt-12 flex items-center justify-between lg:px-[2%] xl:px-[4%]">
+      <span className="mt-2 text-[23px] font-semibold !leading-none md:text-2xl">
+        Khalil Melhem.
+      </span>
 
-      <nav className="relative flex items-center gap-x-2 max-md:-mr-2 max-md:scale-90 md:gap-x-4">
+      <nav className="relative flex items-center gap-x-2 max-md:-mr-2 max-md:scale-95 md:gap-x-4">
         <Button
           variant="dark"
           withIcon={

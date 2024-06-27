@@ -23,6 +23,8 @@ const About = () => {
           height={1333}
           className="h-[350px] w-full max-w-[97.5%] rounded-8xl object-cover max-xl:mx-auto sm:w-[450px] xl:h-[450px]"
           sizes="(max-width: 640px) 97.5vw, 450px"
+          data-aos="fade-left"
+          data-aos-delay="400"
         />
 
         <div className="w-full space-y-10 text-center xl:w-[55%] xl:text-left">
@@ -34,6 +36,7 @@ const About = () => {
             withIcon={
               <ArrowUpRight className="transition-transform duration-300 ease-in-out group-hover:rotate-45" />
             }
+            data-aos="fade-up"
           >
             <Link href="#" target="_blank">
               See my Resumé
@@ -50,28 +53,36 @@ export default About;
 const Text = () => {
   return (
     <>
-      <h2 className="text-4xl font-medium leading-none">About</h2>
+      <h2 className="text-4xl font-medium leading-none" data-aos="fade-down">
+        About
+      </h2>
 
       <p className="text-balance text-[1.4rem] leading-10 max-sm:-mx-1">
-        I’m Khalil — a software engineer with diverse{" "}
-        <br className="max-[527px]:hidden" /> experience in responsive web
-        development.
+        <span className="block" data-aos="fade-down">
+          I’m Khalil — a software engineer with diverse{" "}
+          <br className="max-[527px]:hidden" /> experience in responsive web
+          development.
+        </span>
         <br /> <br />
-        Currently juggling the final year of my major{" "}
-        <br className="max-[527px]:hidden" /> while co-founding Erbut
-        <Link
-          href="https://erbut.me/"
-          target="_blank"
-          className="mx-1.5 -mt-1 inline-flex h-8 w-8 items-center justify-center rounded-xl bg-background align-middle transition-transform hover:scale-110"
-        >
-          <ErbutLogo className="size-7 py-[1px] text-foreground" />
-        </Link>
-        with my friend :&#41;
+        <span className="block" data-aos="fade-down">
+          Currently juggling the final year of my major{" "}
+          <br className="max-[527px]:hidden" /> while co-founding Erbut
+          <Link
+            href="https://erbut.me/"
+            target="_blank"
+            className="mx-1.5 -mt-1 inline-flex h-8 w-8 items-center justify-center rounded-xl bg-background align-middle transition-transform hover:scale-110"
+          >
+            <ErbutLogo className="size-7 py-[1px] text-foreground" />
+          </Link>
+          with my friend :&#41;
+        </span>
         <br /> <br />
-        I’ve been actively building my skills through{" "}
-        <br className="max-[527px]:hidden" /> freelance work and I’m seeking
-        roles that <br className="max-[527px]:hidden" /> allow for continuous
-        professional growth.
+        <span className="block" data-aos="fade-down">
+          I’ve been actively building my skills through{" "}
+          <br className="max-[527px]:hidden" /> freelance work and I’m seeking
+          roles that <br className="max-[527px]:hidden" /> allow for continuous
+          professional growth.
+        </span>
       </p>
     </>
   );

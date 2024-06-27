@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 
 import { Header, Footer } from "@/components/global";
 
-import { ThemeProvider } from "@/contexts/ThemeProvider";
+import { AOSProvider, ThemeProvider } from "@/providers";
 
 export default function RootLayout({
   children,
@@ -33,6 +33,7 @@ export default function RootLayout({
     <html suppressHydrationWarning lang="en">
       <body className={epilogue.className}>
         <ThemeProvider attribute="class" defaultTheme="light">
+          <AOSProvider />
           <Header />
           {children}
           <Footer />
