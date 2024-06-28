@@ -29,7 +29,7 @@ const Work = () => {
         {projects.map(({ url, image, alt, title, description }, idx) => (
           <div
             key={idx}
-            className="w-full md:max-w-[80%] lg:max-w-[60%] xl:max-w-[55%]"
+            className="w-full text-center md:max-w-[80%] md:text-justify lg:max-w-[60%] xl:max-w-[55%]"
           >
             <Link href={url} target="_blank" className="group space-y-8">
               <Image
@@ -50,7 +50,10 @@ const Work = () => {
               </h3>
             </Link>
 
-            <p className="mt-4 text-justify text-lg md:mt-8" data-aos="fade-up">
+            <p
+              className="mt-4 text-lg leading-relaxed max-md:text-balance"
+              data-aos="fade-up"
+            >
               {description}
             </p>
           </div>
