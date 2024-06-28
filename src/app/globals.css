@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 :root {
-  --background: 0 0% 100%;
-  --foreground: 0 0% 0%;
+  --background: 0 0% 95%;
+  --foreground: 0 0% 7%;
 }
 
 .dark {
-  --background: 0 0% 0%;
-  --foreground: 0 0% 100%;
+  --background: 0 0% 7%;
+  --foreground: 0 0% 95%;
 }
 
 @layer base {
