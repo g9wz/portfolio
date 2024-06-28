@@ -1,9 +1,13 @@
 "use client";
 
 import { useState } from "react";
+
 import Link from "next/link";
+
 import { motion, AnimatePresence } from "framer-motion";
-import Button from "@/components/global/button/Button";
+
+import { Button } from "@/components/global";
+
 import InitialMenuIcon from "~icons/line-md/menu";
 import MenuIcon from "~icons/line-md/close-to-menu-transition";
 import CloseIcon from "~icons/line-md/menu-to-close-transition";
@@ -32,23 +36,20 @@ const Header = () => {
       </span>
 
       <nav className="relative flex items-center gap-x-2 max-md:-mr-2 max-md:scale-95 md:gap-x-4">
-        <Button
-          variant="dark"
-          withIcon={
-            <div className="size-1.5 rounded-full bg-green-500 shadow-[0px_0px_6px] shadow-green-400" />
-          }
-          iconPosition="start"
-        >
-          <Link href="#contact">Hire Me</Link>
+        <Button asChild variant="dark">
+          <Link href="#contact">
+            <div className="mr-2 size-1.5 rounded-full bg-green-500 shadow-[0px_0px_6px] shadow-green-400" />
+            Hire Me
+          </Link>
         </Button>
 
         <Button size="icon" onClick={toggleMenu}>
           {isMenuOpen ? (
-            <CloseIcon />
+            <CloseIcon aria-label="Close menu" />
           ) : hasMenuBeenOpened ? (
-            <MenuIcon />
+            <MenuIcon aria-label="Open menu" />
           ) : (
-            <InitialMenuIcon />
+            <InitialMenuIcon aria-label="Open menu" />
           )}
         </Button>
 
