@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import ThemeToggle from "@/components/global/theme/ThemeToggle";
+import { ThemeToggle } from "@/components/global";
 
 import GithubIcon from "~icons/line-md/github-loop";
 import LinkedinIcon from "~icons/line-md/linkedin";

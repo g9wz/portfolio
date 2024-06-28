@@ -22,7 +22,9 @@ export const metadata: Metadata = {
 
 import { Header, Footer } from "@/components/global";
 
-import { AOSProvider, ThemeProvider } from "@/providers";
+import { AOSProvider, ThemeProvider } from "@/lib/providers";
+
+import { RemoveTabIndex } from "@/lib/utils";
 
 export default function RootLayout({
   children,
@@ -37,6 +39,7 @@ export default function RootLayout({
           <Header />
           {children}
           <Footer />
+          <RemoveTabIndex />
         </ThemeProvider>
       </body>
     </html>

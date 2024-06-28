@@ -56,16 +56,15 @@ const Work = () => {
           </div>
         ))}
         <Button
+          asChild
           variant="dark"
           size="lg"
           className="group"
-          withIcon={
-            <ArrowUpRight className="transition-transform duration-300 ease-in-out group-hover:rotate-45" />
-          }
           data-aos="fade-up"
         >
           <Link href="https://github.com/g9wz/portfolio" target="_blank">
             Check more on GitHub
+            <ArrowUpRight className="ml-2 transition-transform duration-300 ease-in-out group-hover:rotate-45" />
           </Link>
         </Button>
       </div>
