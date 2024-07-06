@@ -89,11 +89,11 @@ const Form = () => {
           options: {
             submitCallback: handleSubmit,
             preventAutoFocus: true,
-            robotImage: "/contact/robot.png",
+            robotImage: "/images/contact/robot.png",
             userImage:
               theme === "dark"
-                ? "/contact/user/white.jpg"
-                : "/contact/user/black.jpg",
+                ? "/images/contact/user/white.jpg"
+                : "/images/contact/user/black.jpg",
             loadExternalStyleSheet: false,
             flowStepCallback: validatePhoneNumber,
           },
