@@ -16,7 +16,7 @@ const About = () => {
     >
       <div className="flex flex-col items-center justify-between gap-y-20 xl:flex-row-reverse">
         <Image
-          src="/me.jpg"
+          src="/images/me.jpg"
           alt="Image of me shot from the back at a sports competition"
           quality={100}
           width={1500}
@@ -36,7 +36,7 @@ const About = () => {
             className="group"
             data-aos="fade-up"
           >
-            <Link href="#" target="_blank">
+            <Link href="/files/resume.pdf" target="_blank">
               See my Resumé
               <ArrowUpRight className="ml-2 transition-transform duration-300 ease-in-out group-hover:rotate-45" />
             </Link>
