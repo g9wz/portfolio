@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./public/preview.gif" width="750px"  />
+  <img src="./public/images/preview.gif" width="750px"  />
   
   Built with [Next.js](https://nextjs.org/), [AOS](https://michalsnik.github.io/aos/), [Framer Motion](https://www.framer.com/motion/), [Conversational Form](https://space10-community.github.io/conversational-form/), and [Tailwind CSS](https://tailwindcss.com/).
 </div>
