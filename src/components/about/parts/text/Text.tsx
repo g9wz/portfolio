@@ -20,14 +20,23 @@ const Text = () => {
           Currently juggling the final year of my major{" "}
           <br className="max-[527px]:hidden" /> while co-founding Erbut
           <Link
-            href="https://erbut.me/"
-            target="_blank"
             aria-label="Erbut's website"
+            target="_blank"
+            href="https://erbut.me/"
             className="mx-1.5 -mt-1 inline-flex h-8 w-8 items-center justify-center rounded-xl bg-background align-middle transition-transform hover:scale-110"
           >
             <ErbutLogo className="size-7 py-[1px] text-foreground" />
           </Link>
-          with my friend :&#41;
+          with my{" "}
+          <Link
+            aria-label="Yazeed's website"
+            target="_blank"
+            href="https://yazeed.alkhalaf.dev/"
+            className="relative overflow-hidden after:absolute after:-bottom-[2px] after:left-0 after:h-[2px] after:w-full after:scale-0 after:bg-background after:transition-transform after:duration-200 after:content-[''] hover:after:scale-100"
+          >
+            friend
+          </Link>{" "}
+          :&#41;
         </span>
         <br /> <br />
         <span className="block" data-aos="fade-down">
