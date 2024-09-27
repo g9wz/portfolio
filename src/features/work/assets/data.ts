@@ -1,7 +1,12 @@
+import ErbutPreview from "./images/erbut.gif";
+import SarndPreview from "./images/sarnd.gif";
+import GdscPreview from "./images/gdsc.gif";
+import GameCampPreview from "./images/game-camp.gif";
+
 export const projects = [
   {
     url: "https://erbut.me/",
-    image: "/images/projects/erbut.gif",
+    image: ErbutPreview,
     alt: "Animated GIF of the Erbut website, showing landing page, features grid, and testimonials.",
     title: "Erbut",
     description:
@@ -9,7 +14,7 @@ export const projects = [
   },
   {
     url: "https://sarnd.sa/",
-    image: "/images/projects/sarnd.gif",
+    image: SarndPreview,
     alt: "Animated GIF of Sarnd's landing page with hero section and background video.",
     title: "Sarnd",
     description:
@@ -17,7 +22,7 @@ export const projects = [
   },
   {
     url: "https://gdscyu.netlify.app/",
-    image: "/images/projects/gdsc.gif",
+    image: GdscPreview,
     alt: "Animated GIF of GDSC Yu landing page with 3D logo, slogan, and join button.",
     title: "Google DSC | Yu",
     description:
@@ -26,7 +31,7 @@ export const projects = [
   {
     url: "https://gamecamp-gdscyu.netlify.app/",
     title: "Game Camp",
-    image: "/images/projects/game-camp.gif",
+    image: GameCampPreview,
     alt: "Animated GIF of Game Camp landing page with pixel art background and event info.",
     description:
       "Pixel art-themed site for the annual game camp. Features speakers, schedule, and FAQs. Built using Astro and Tailwind CSS (Yes, I love it that much).",

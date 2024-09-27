@@ -1,14 +1,14 @@
-import Hero from "@/components/hero/Hero";
-import About from "@/components/about/About";
-import Work from "@/components/work/Work";
+import HeroSection from "@/features/hero/hero-section";
+import AboutSection from "@/features/about/about-section";
+import WorkSection from "@/features/work/work-section";
 import ContactSection from "@/features/contact/contact-section";
 
 export default function Home() {
   return (
     <>
-      <Hero />
-      <About />
-      <Work />
+      <HeroSection />
+      <AboutSection />
+      <WorkSection />
       <ContactSection />
     </>
   );

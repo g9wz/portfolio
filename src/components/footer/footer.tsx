@@ -1,4 +1,4 @@
-import { Links } from "@/components/global";
+import Links from "./parts/links";
 
 const Footer = () => {
   return (

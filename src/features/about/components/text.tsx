@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { ErbutLogo } from "@/assets/icons";
+import ErbutLogo from "../assets/erbut-logo";
 
 const Text = () => {
   return (

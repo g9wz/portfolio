@@ -2,12 +2,12 @@ import Link from "next/link";
 
 import Image from "next/image";
 
+import { Button } from "@/components/ui/button";
+
+import { projects } from "./assets/data";
+
 import ArrowDown from "~icons/ph/arrow-down";
 import ArrowUpRight from "~icons/ph/arrow-up-right-bold";
-
-import { Button } from "@/components/global";
-
-import { projects } from "@/assets/data";
 
 const Work = () => {
   return (

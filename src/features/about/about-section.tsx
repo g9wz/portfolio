@@ -2,13 +2,13 @@ import Image from "next/image";
 
 import Link from "next/link";
 
-import { Text } from "./parts";
+import { Button } from "@/components/ui/button";
 
-import { Button } from "@/components/global";
+import Text from "./components/text";
 
 import ArrowUpRight from "~icons/ph/arrow-up-right-bold";
 
-const About = () => {
+const AboutSection = () => {
   return (
     <section
       id="about"
@@ -16,7 +16,7 @@ const About = () => {
     >
       <div className="flex flex-col items-center justify-between gap-y-20 xl:flex-row-reverse">
         <Image
-          src="/images/me.jpg"
+          src="/me.jpg"
           alt="Image of me shot from the back at a sports competition"
           quality={100}
           width={1500}
@@ -47,4 +47,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutSection;

@@ -1,8 +1,8 @@
-import { Links } from "@/components/global";
+import Links from "@/components/footer/parts/links";
 
-import { WavingHand } from "@/assets/icons";
+import WavingHand from "./assets/waving-hand";
 
-const Hero = () => {
+const HeroSection = () => {
   return (
     <section className="mt-20 md:mt-32 lg:px-[4%] xl:px-[8%]">
       <h1 className="text-[2rem] font-medium !leading-[4.5rem] lg:text-5xl">
@@ -33,4 +33,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default HeroSection;
