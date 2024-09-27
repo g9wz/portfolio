@@ -5,10 +5,19 @@ import { useRef, useEffect, useCallback } from "react";
 import { useTheme } from "next-themes";
 
 import { parsePhoneNumberFromString } from "libphonenumber-js";
+import { formFields } from "../assets/data";
 
-import { formFields } from "./index";
+const robotImage = new URL("../assets/images/robot.png", import.meta.url).href;
+const blackEggImage = new URL(
+  "../assets/images/user/black-egg.jpg",
+  import.meta.url,
+).href;
+const whiteEggImage = new URL(
+  "../assets/images/user/white-egg.jpg",
+  import.meta.url,
+).href;
 
-const Form = () => {
+const ContactForm = () => {
   const { theme } = useTheme();
 
   const elemRef = useRef<HTMLDivElement | null>(null);
@@ -82,18 +91,15 @@ const Form = () => {
 
     removeExistingForm();
 
-    // @ts-ignore - ConversationalForm has no declaration file
+    // @ts-ignore - ConversationalForm has no ts declaration file
     import("conversational-form").then(({ ConversationalForm }) => {
       try {
         cfRef.current = ConversationalForm.startTheConversation({
           options: {
             submitCallback: handleSubmit,
             preventAutoFocus: true,
-            robotImage: "/images/contact/robot.png",
-            userImage:
-              theme === "dark"
-                ? "/images/contact/user/white.jpg"
-                : "/images/contact/user/black.jpg",
+            robotImage: robotImage,
+            userImage: theme === "dark" ? blackEggImage : whiteEggImage,
             loadExternalStyleSheet: false,
             flowStepCallback: validatePhoneNumber,
           },
@@ -114,4 +120,4 @@ const Form = () => {
   return <div ref={elemRef} />;
 };
 
-export default Form;
+export default ContactForm;

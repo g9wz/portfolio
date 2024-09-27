@@ -1,6 +1,4 @@
-import "./styles/Form.css";
-
-export { default as Form } from "./Form";
+import "../styles/Form.css";
 
 export const formFields = [
   {

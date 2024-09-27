@@ -1,6 +1,6 @@
-import { Form } from "./parts";
+import ContactForm from "./components/contact-form";
 
-const Contact = () => {
+const ContactSection = () => {
   return (
     <section
       id="contact"
@@ -20,11 +20,11 @@ const Contact = () => {
           data-aos="fade-up"
           data-aos-delay="500"
         >
-          <Form />
+          <ContactForm />
         </div>
       </div>
     </section>
   );
 };
 
-export default Contact;
+export default ContactSection;
