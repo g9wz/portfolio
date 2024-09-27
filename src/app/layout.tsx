@@ -20,9 +20,9 @@ export const metadata: Metadata = {
   ],
 };
 
-import { Header, Footer } from "@/components/global";
+import { AppProvider } from "./provider";
 
-import { AOSProvider, ThemeProvider } from "@/lib/providers";
+import { Header, Footer } from "@/components/global";
 
 import { RemoveTabIndex } from "@/lib/utils";
 
@@ -34,13 +34,17 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning lang="en">
       <body className={epilogue.className}>
-        <ThemeProvider attribute="class" defaultTheme="light">
-          <AOSProvider />
+        <AppProvider
+          themeProviderProps={{
+            attribute: "class",
+            defaultTheme: "light",
+          }}
+        >
           <Header />
           {children}
           <Footer />
           <RemoveTabIndex />
-        </ThemeProvider>
+        </AppProvider>
       </body>
     </html>
   );
