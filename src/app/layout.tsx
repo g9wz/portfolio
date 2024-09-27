@@ -24,8 +24,6 @@ import { AppProvider } from "./provider";
 
 import { Header, Footer } from "@/components/global";
 
-import { RemoveTabIndex } from "@/lib/utils";
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -43,7 +41,6 @@ export default function RootLayout({
           <Header />
           {children}
           <Footer />
-          <RemoveTabIndex />
         </AppProvider>
       </body>
     </html>
