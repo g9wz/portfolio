@@ -1,4 +1,4 @@
-import "../styles/Form.css";
+import "../styles/form.css";
 
 export const formFields = [
   {
