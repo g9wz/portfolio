@@ -23,7 +23,7 @@ const HeroSection = () => {
         data-aos="fade-up"
         data-aos-delay="600"
       >
-        ◎︎ Last updated — June 2024
+        ◎︎ Last updated — September 2024
       </p>
 
       <div data-aos="fade-up" data-aos-delay="800" className="mt-10 md:mt-20">

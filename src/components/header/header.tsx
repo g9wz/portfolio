@@ -20,7 +20,7 @@ const Header = () => {
         <Button asChild variant="dark">
           <Link href="#contact">
             <div className="mr-2 size-1.5 rounded-full bg-green-500 shadow-[0px_0px_6px] shadow-green-400" />
-            Hire Me
+            Contact Me
           </Link>
         </Button>
 
