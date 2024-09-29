@@ -75,7 +75,7 @@ export const formFields = [
     type: "text",
     name: "method",
     "cf-conditional-contact-method": "other",
-    "cf-questions": "Sure!&&How would you like me to get back to you?",
+    "cf-questions": "Sure!&&What's your preferred contact method?",
     required: true,
   },
 ];
